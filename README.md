@@ -4,9 +4,16 @@ This project requires [Node.js](https://nodejs.org/en/).
 Installation instructions are provided in the given link.
 
 ## Setup
-Navigate to the project directory.
+Clone the repository.
 ```sh
-cd assignment1
+git clone https://github.com/LeviMWilliamson/SENG480C_A1.git
+```
+
+Upload the sketch provided in the `arduino/` folder to your Uno board.
+
+Next, navigate to the project directory.
+```sh
+cd SENG480C_A1
 ```
 Install dependencies.
 ```
