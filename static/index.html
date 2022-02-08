@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>demo</title>
+		<link rel='stylesheet' href='/index.css'/>
+		<script defer src='index.js'></script>
+	</head>
+	<body>
+		<div>
+			<input id='image-input' type='file'/>
+		</div>
+		<div>
+			<canvas id='image-output'>Browser unsupported.</canvas>
+		</div>
+		
+		<fieldset>
+			<legend>Bounds</legend>
+			<div>
+				<label for='minimum'>Minimum</label>
+				<input id='minimum-range'
+					name='minimum'
+					type='range'
+					min='0'
+					max='1024'
+					value='0'
+				/>
+				<output id='minimum-range-output'>0</output>
+			</div>
+			<div>
+				<label for='maximum'>Maximum</label>
+				<input id='maximum-range'
+					name='maximum'
+					type='range'
+					min='0'
+					max='1024'
+					value='1024'
+				/>
+				<output id='maximum-range-output'>1024</output>
+			</div>
+			
+		</fieldset>
+
+		<div class='output'>
+			Sensor:
+			<samp id='photosensor-value'></samp>
+		</div>
+	</body>
+</html>
