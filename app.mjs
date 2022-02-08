@@ -1,5 +1,5 @@
 import assert from 'assert/strict'
-import WebSocket from 'ws'
+import { WebSocketServer } from 'ws'
 import SerialPort from 'serialport'
 import Readline from '@serialport/parser-readline'
 import express from 'express'
@@ -11,7 +11,7 @@ assert.notStrictEqual(process.env.WEBSOCKET_PORT, undefined, 'Must provide WEB_S
 assert.notStrictEqual(process.env.PORT, undefined, 'Must provide PORT environment variable.')
 
 let sockets = []
-const server = new WebSocket.Server({ port: process.env.WEBSOCKET_PORT })
+const server = new WebSocketServer({ port: process.env.WEBSOCKET_PORT })
 server.on('connection', socket => {
 	sockets.push(socket)
 	socket.on('close', () => {
