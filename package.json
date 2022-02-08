@@ -2,7 +2,8 @@
 	"type": "module",
 	"dependencies": {
 		"express": "^4.17.2",
-		"serialport": "^9.2.8"
+		"serialport": "^9.2.8",
+		"ws": "^8.5.0"
 	},
 	"scripts": {
 		"start": "node app.mjs"
